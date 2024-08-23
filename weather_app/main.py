@@ -12,7 +12,7 @@ def show_weather():
         messagebox.showerror("Error", "City field cannot be empty")
         return
     
-    api_key = "def16f0900b589024109c5bd8587701a"  # Replace with your OpenWeatherMap API key
+    api_key = ""  # Replace with OpenWeatherMap API key
     weather_data = get_weather(api_key, city)
     
     if weather_data['cod'] != 200:
